@@ -76,3 +76,13 @@ This notebook includes:
 - CNN model architecture
 - Training and validation
 - Accuracy plots and confusion matrix
+
+---
+
+## 📥 Dataset
+
+The dataset contains over 8,000 fingerprint images for blood group classification. Due to its large size, it is hosted externally. You can download it from the following link:
+
+[Download Dataset](https://drive.google.com/file/d/1YRDuwJ2LNrWk7IpvVrWYz--VgLVjCmAv/view?usp=drive_link)
+
+Please follow the instructions in the `dataset/README.md` for details on how to set up the dataset.
