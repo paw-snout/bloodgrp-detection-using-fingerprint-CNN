@@ -64,3 +64,15 @@ bloodgrp-detection-using-fingerprint-CNN/
 ├── 📄 requirements.txt # List of dependencies
 ├── 📄 .gitignore # Common files and folders to ignore in Git
 └── 📄 README.md # Project overview and instructions
+
+## 📔 Jupyter Notebook
+
+All preprocessing, model training, and evaluation steps are combined in a single notebook:
+
+👉 [`blood_group_cnn.ipynb`](./blood_group_cnn.ipynb)
+
+This notebook includes:
+- Data loading and augmentation
+- CNN model architecture
+- Training and validation
+- Accuracy plots and confusion matrix
