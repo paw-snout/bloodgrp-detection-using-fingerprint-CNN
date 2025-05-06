@@ -1,32 +1,42 @@
-# 🩸Blood Group Detection using Fingerprint with CNN
+# 🩸 Blood Group Detection using Fingerprint with CNN
 
-This project leverages Convolutional Neural Networks (CNNs) to classify blood groups based on fingerprint images. It explores the feasibility of biometric patterns in predicting medical attributes.
+This project leverages Convolutional Neural Networks (CNNs) to classify **blood groups** based on **fingerprint images**. It explores the feasibility of biometric patterns in predicting medical attributes using deep learning.
 
-# 📌Problem Statement
+---
 
-Traditional blood group identification requires invasive techniques. This project aims to utilize biometric fingerprints to classify a person’s blood group noninvasively using deep learning techniques.
+## 📌 Problem Statement
 
-# 🛠️Technologies Used
+Traditional blood group identification requires invasive techniques such as blood sampling. This project aims to utilize **biometric fingerprint images** to non-invasively classify a person’s blood group using a Convolutional Neural Network (CNN).
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - TensorFlow / Keras
 - OpenCV
 - NumPy / Pandas
 - Matplotlib / Seaborn
+- Google Colab / Jupyter Notebook
 
-# 🧪Model Architecture
+---
 
-The CNN architecture consists of:
-- 3 Convolutional layers
+## 🧪 Model Architecture
+
+The CNN model includes:
+- Convolutional layers with ReLU activations
 - MaxPooling layers
-- Flatten + Dense layers
-- Softmax output for classification
+- Dropout for regularization
+- Fully connected Dense layers
+- Softmax output for multi-class classification
 
-See `src/model.py` for implementation details.
+> Training and evaluation were conducted on over **6,000 fingerprint images** labeled with respective blood groups.
+
+---
 
 ## 📊 Results
 
-The model achieves high accuracy in classifying blood groups across multiple classes (A, B, AB, O; +ve/-ve).
+The final model achieves strong performance in multi-class classification. Sample metrics:
 
 | Class | Precision | Recall | F1-score |
 |-------|-----------|--------|----------|
@@ -34,7 +44,23 @@ The model achieves high accuracy in classifying blood groups across multiple cla
 | B+    | 0.90      | 0.92   | 0.91     |
 | ...   | ...       | ...    | ...      |
 
-*Confusion matrix and additional metrics available in the `results/` folder.*
+Plots like **accuracy curves** and **confusion matrices** are included in the `results/` directory.
 
-## 📁 Folder Structure
+---
 
+## 📁 Project Structure
+
+bloodgrp-detection-using-fingerprint-CNN/
+│
+├── 📁 results/ # Evaluation plots (accuracy, confusion matrix)
+│
+├── 📁 models/ # Saved model files (.h5 or .pkl)
+│
+├── 📁 dataset/ # Dataset notes or sample images (not full dataset)
+│ └── README.md # Instructions to access the dataset
+│
+├── 📄 blood_group_cnn.ipynb # Main Jupyter Notebook with code, training, results
+├── 📄 final.pdf # Project report explaining problem, methodology, results
+├── 📄 requirements.txt # List of dependencies
+├── 📄 .gitignore # Common files and folders to ignore in Git
+└── 📄 README.md # Project overview and instructions
